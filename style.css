@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+
+:root {
+    --text-font: 'Titillium Web', sans-serif;
+    --primary-text: #6200EE;
+    --primary: #fdfcf7;
+    --secondary-text: #3700B3;
+    --result-text: #504d53;
+    --button-color: #03DAC5;
+}
+
+body {
+    background-color: var(--primary);
+}
+
+
+.centerinfo {
+    border: none;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0 4rem;
+    gap: 50px;
+}
+
+@media only screen and (max-width:768px) {
+    .container {
+        grid-template-rows: repeat(2, 1fr);
+        margin: -2rem;
+
+    }
+
+    .centerinfo {
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+}
+
+.panel {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    padding: 2rem;
+    box-shadow: 2px 2px 50px 3px var(--result-text);
+    border-radius: 10px;
+    margin-top: 10px;
+    transition: all 1s ease-in-out;
+    border: none;
+}
+
+.panel:hover,
+.centerinfo:hover {
+    transform: scale(1.009);
+}
+
+.panel label {
+    color: var(--secondary-text);
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-family: var(--text-font);
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.panel .panel_inputs {
+    width: 15rem;
+    height: 2rem;
+    outline: none;
+    border: none;
+    border-bottom: 3px solid var(--button-color);
+    transition: all 500ms ease-in-out;
+    padding-left: 10px;
+    caret-color: #6200EE;
+    font-family: var(--text-font);
+    font-weight: 700;
+    font-size: 1.2rem;
+    letter-spacing: 5px;
+    color: var(--result-text);
+}
+
+.panel input:focus {
+    width: 20rem;
+}
+
+.panel h1 {
+    position: absolute;
+    top: 0;
+}
+
+.panel h1,
+.centerinfo h1 {
+    text-align: center;
+    font-family: var(--text-font);
+    font-weight: 600;
+    letter-spacing: 3px;
+    color: var(--primary-text);
+}
+
+.subBtn {
+    text-align: center;
+    background-color: var(--button-color);
+    font-family: var(--text-font);
+    font-weight: 700;
+    padding: 2px 2rem;
+    font-size: 1.3rem;
+    color: var(--result-text);
+    border-radius: 5px;
+    border: none;
+    transition: opacity 1s ease-in-out;
+}
+
+.subBtn:hover {
+    opacity: 0.7;
+}
+
+.centerinfo {
+    border: none;
+    box-shadow: 2px 2px 50px 3px var(--result-text);
+    margin-top: 10px;
+    transition: all 1s ease-in-out;
+    border: none;
+}
+.info{
+    padding: 1rem;
+    list-style: none;
+}
+.card{
+    box-shadow: 3px 3px 20px  var(--result-text);
+    margin-top: 1rem;
+    border-radius: 3px;
+    font-family: var(--text-font);
+    font-weight: 400;
+    font-size: 1rem;
+    padding-left: 1rem;
+    color: rgb(27, 26, 26)
+
+}

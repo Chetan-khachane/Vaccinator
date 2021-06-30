@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vaccinator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="./script.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="panel" >
+            <h1>Control Panel</h1>
+            <label for="date">
+                Change Date:
+            </label>
+            <input type="date" name="date" id="date" class='panel_inputs'>
+            <label for="pin">
+                Change Pin:
+            </label>
+            <input type="number" id='pin' name="pincode" class='panel_inputs'>
+            <label for='initial'>
+                Type initial of the Hospital you want to set Buzzer:
+            </label>
+            <input type="text" name="initial" id='initial' class='panel_inputs'>
+
+            <button id='submit' class="subBtn">Submit</button>
+        </div>
+
+        <div class="centerinfo">
+            <h1>Results for Search</h1>
+            <ul class='info'></ul>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

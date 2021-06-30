@@ -1,0 +1,29 @@
+sessions: Array(5)
+0:
+address: "PHC MurbeMurbe Taluka Palghar"
+available_capacity: 0
+available_capacity_dose1: 0
+available_capacity_dose2: 0
+block_name: "Palghar"
+center_id: 691130
+date: "23-06-2021"
+district_name: "Palghar"
+fee: "0"
+fee_type: "Free"
+from: "09:00:00"
+lat: 19
+long: 72
+min_age_limit: 18
+name: "Murbe PHC"
+pincode: 401501
+session_id: "f13d9085-c256-492e-8e01-88a348985e5a"
+slots: Array(4)
+0: "09:00AM-11:00AM"
+1: "11:00AM-01:00PM"
+2: "01:00PM-03:00PM"
+3: "03:00PM-06:00PM"
+length: 4
+__proto__: Array(0)
+state_name: "Maharashtra"
+to: "18:00:00"
+vaccine: "COVISHIELD"
